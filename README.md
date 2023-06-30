@@ -115,8 +115,8 @@ ORDER BY date;
 ```
 SELECT pet_id, service, 
 CASE 
-	WHEN service = 'nails' THEN 'gift'
-	ELSE 'no gift'
+   WHEN service = 'nails' THEN 'gift'
+   ELSE 'no gift'
 END AS get_gift
 FROM transactions
 ORDER BY get_gift;
@@ -138,7 +138,7 @@ GROUP BY date;
 ```
 WITH all_owners AS 
 (
-	SELECT *
+    SELECT *
     FROM owners
     UNION ALL
     SELECT *
